@@ -1,0 +1,91 @@
+/* Header */
+header {
+  background-color: #333; /* Example background color */
+  padding: 10px; /* Example padding */
+}
+
+/* Desktop header */
+.dsktop-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Image div */
+.img-div {
+  color: #fff; /* Example text color */
+  font-size: 20px; /* Example font size */
+}
+
+/* Navigation */
+nav {
+  margin-left: 20px; /* Example margin */
+}
+
+/* Menu list */
+.dsktop-menu-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Menu items */
+.dsktop-menu-list li {
+  display: inline-block;
+  margin-right: 10px; /* Example margin */
+}
+
+/* NavLink styling */
+.dsktop-menu-list li a {
+  color: #fff; /* Example text color */
+  text-decoration: none;
+  padding: 5px 10px; /* Example padding */
+}
+
+/* NavLink hover effect */
+.dsktop-menu-list li a:hover {
+  background-color: #555; /* Example background color on hover */
+}
+
+.mobile-header {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  header {
+    background-color: unset;
+    padding: unset;
+  }
+  .dsktop-header {
+    display: none;
+  }
+  .mobile-header {
+    display: block;
+  }
+  .mobile-header nav {
+    display: block;
+  }
+  .hamburger-menu {
+    position: absolute;
+    bottom: 48px;
+    right: 48px;
+    background: red;
+    border-radius: 8px;
+    padding: 9px 24px;
+  }
+  .mobile-menu-list li {
+    list-style: none;
+    margin: 30px 0px;
+  }
+  ul.mobile-menu-list li a {
+    text-decoration: none;
+    color: red;
+    background: black;
+    padding: 6px;
+  }
+  .mobile-header nav {
+    position: absolute;
+    bottom: 90px;
+    right: 40px;
+  }
+}
