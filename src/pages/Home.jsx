@@ -4,7 +4,7 @@ function Home() {
   return (
     <div>
       <Navbar />
-      <h2>home page</h2>
+      <h2>Yash Goyal</h2>
     </div>
   );
 }
