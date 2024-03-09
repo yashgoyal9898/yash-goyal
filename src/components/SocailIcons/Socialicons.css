@@ -1,0 +1,27 @@
+.follow-me-cnt {
+  position: fixed;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.social-links ul li {
+  padding: 12px 0px;
+}
+
+@media (max-width: 767px) {
+  .social-links ul li {
+    display: inline;
+    padding: 0px 6px;
+  }
+  svg {
+    width: 21px;
+  }
+  .follow-me-cnt {
+    position: fixed;
+    left: 50%; /* Centering horizontally */
+    top: 0; /* Positioned at the top */
+    transform: translateX(-50%);
+    z-index: 1; /* Centering trick to adjust for element width */
+  }
+}

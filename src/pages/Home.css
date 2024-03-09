@@ -1,0 +1,39 @@
+.container-fluid {
+  padding: 0;
+}
+.hmpage-cont {
+  background-color: #030502;
+  padding: 10px;
+}
+
+.banner-cnt {
+  display: flex;
+}
+.banner-left,
+.banner-right {
+  flex: 0 0 50%;
+}
+
+.bg-img {
+  background-position: 50% 30%;
+  background-size: cover;
+  min-height: 700px;
+  position: relative;
+  background-image: url("https://images.unsplash.com/photo-1514790193030-c89d266d5a9d");
+}
+
+@media (max-width: 767px) {
+  .banner-cnt {
+    flex-direction: column;
+  }
+  .banner-right {
+    display: none;
+  }
+  .banner-left {
+    background-position: 50% -110px;
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+    background-image: url("https://images.unsplash.com/photo-1514790193030-c89d266d5a9d");
+  }
+}

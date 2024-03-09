@@ -1,0 +1,23 @@
+.typing-text {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: #fff;
+}
+
+.typing-text h2 {
+  font-size: 68px;
+}
+
+@media (max-width: 767px) {
+  .typing-text {
+    justify-content: end;
+    height: 63vh;
+  }
+  .typing-text h2 {
+    font-size: 40px;
+  }
+}

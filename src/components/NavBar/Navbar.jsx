@@ -36,7 +36,11 @@ const Header = () => {
         {/* mobile menu */}
         <div className="mobile-header">
           <span className="hamburger-menu" onClick={handleMenu}>
-            click
+            <svg fill="#fff" viewBox="0 0 100 80" width="40" height="40">
+              <rect width="100" height="20" rx="10"></rect>
+              <rect y="30" width="100" height="20" rx="10"></rect>
+              <rect y="60" width="100" height="20" rx="10"></rect>
+            </svg>
           </span>
           {menu && (
             <nav>
