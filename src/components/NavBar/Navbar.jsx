@@ -1,13 +1,17 @@
-import { useState } from "react"; // Import useState hook
+import { useState, useRef } from "react"; // Import useState hook
 import { NavLink } from "react-router-dom";
 import "./Navbar.css"; // Import CSS file for header styling
 
 const Header = () => {
   const [menu, setMenu] = useState(false);
+  const navRef = useRef(null);
+
+  if (navRef.current) {
+    navRef.current.style.left = menu ? "0" : "100%";
+  }
 
   const handleMenu = () => {
     setMenu(!menu);
-    console.log(menu);
   };
 
   return (
@@ -43,7 +47,7 @@ const Header = () => {
             </svg>
           </span>
           {menu && (
-            <nav>
+            <nav ref={navRef}>
               <ul className="mobile-menu-list">
                 <li>
                   <NavLink to="/">Home</NavLink>
